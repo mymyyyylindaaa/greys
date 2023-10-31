@@ -1,0 +1,152 @@
+﻿<!doctypehtml>
+<html lang='pt-BR'>
+ <head>
+  <meta charset="UTF-8">
+  <title>Grey's Anatomy </title>
+  <link rel="stylesheet" href="mymysite.css">
+ </head>
+ 
+ <body>
+ 
+ <header>
+<div class="homelupa">
+<div id="home">
+<a href="siteinicio.html"> <img src="imagens/home.jpg" class="home"> </a>
+</div>
+<div id="login">
+<a href="login.html" class="login"><img src="imagens/pessoa.jpg" width="40px"></a>
+</div>
+</div>
+ <h1 class="pagina clear">Série </h1>
+ <h1 class="pagina"> Grey's Anatomy</h1>
+ <h2 class="pagina"> "Se você tem disposição para correr o risco, a vista do outro lado é espetacular" </h2>
+
+<nav>
+<ul>
+	<li><a href="siteinicio.html">Início</a></li>
+	<li><a href="sitepersonagens.html">Personagens</a></li>
+	<li><a href="siteserie.html">Série</a></li>
+	<li><a href="shipps.html">Ships</a></li>
+</ul>
+</nav>	
+</header>
+
+<main>
+<h3> Bem vindo ao mundo de Grey's Anatomy!</h3>
+ <article>
+  <form action="login2.html">
+
+<p>
+		<label for="nome">Nome:</label>
+		<input type="text" name="nome" id="nome" required maxlenght="180" pattern="[aA-zZ\s]+$" placeholder="Somente letras..."><br>
+	</p>
+	<p>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
+	</p>
+	<p>
+		<label for="senha">Senha:</label>
+		<input type="password" name="senha" id="senha" required maxlength="8" placeholder="Máximo de oito caracteres...">
+	</p>
+	<button type="button" class="botao" id="botao1" onclick="aparecer()">
+	Mais
+	</button>
+	<script>
+		function aparecer(){
+			var maistext = `<p>
+			<p>*Campos não obrigatórios*</p>
+<p>
+<label for="teste">Quanto você gosta da serie?</label><br>
+<input type="radio" name="teste" id="op1">
+<label for="op1">Normal, não me agrada muito</label>
+<input type="radio"  name="teste" id="op2">
+<label for="op2">Não gostei</label>
+<input type="radio" name="teste" id="op3">
+<label for="op3">Gostei bastante, mas chorei durante alguns episódios</label>
+<input type="radio" name="teste" id="op4">
+<label for="op4">Uma das minhas séries preferidas, eu amo!</label>
+</p>
+<p>Qual é seu personagem preferido?
+<select name="personagens">
+<option>Meredith Grey</option>
+<option>Derek Shepherd</option>   
+<option>Alex Karev</option>
+<option>Miranda Bailey</option>
+<option>Cristina Yang</option>
+<option>Richard Webber</option>
+<option>Izzie Stevens</option>
+<option>Owen Hunt</option>
+<option>Jackson Avery</option>
+<option>Callie Torres</option>
+<option>George O'Malley</option>
+<option>Arizona Robbins</option>
+<option>Maggie Pierce</option>
+<option>Amelia Shepherd</option>
+<option>Teddy Altman</option>
+<option>Jo Wilson</option>
+<option>April Kepner</option>   
+<option>Mark Sloan</option>
+<option>Addison Montgomery</option>
+<option>Lexy Grey</option>
+<option>Andrew DeLuca</option>
+<option>Preston Burke</option>
+<option>Levi Schmitt</option>
+<option>Lucas Adams</option>
+<option>Atticus Lincoln</option>
+<option>Ben Warren</option>
+<option>Nathan Riggs</option>
+<option>Carine DeLuca</option>
+<option>Stephanie Edwards</option>
+<option>Tom Koracick</option>
+<option>Nico Kim</option>
+<option>Elis Grey</option>   
+<option>Adele Webber</option>
+<option>Leag Murphy</option>
+<option>Taryn Helm</option>
+<option>Nicole Herman</option>
+<option>Catherine Avery</option>
+<option>Penelope Blake</option>
+<option>Não tenho personagem preferido</option>
+</select>
+</p>
+
+ <p>
+		<label for="texto">Deixe uma frase memorável da serie...</label><br>
+		<textarea name="texto" id="texto"></textarea>
+	</p>`
+            if((document.querySelector("#botao1").innerText.toString() + "") === "Mais"){
+				console.log("A")
+				document.querySelector("#botao1").innerHTML = `Menos`
+				document.querySelector("#mais1").innerHTML = maistext
+			} else if((document.querySelector("#botao1").innerText.toString() + "") === "Menos"){
+				document.querySelector("#botao1").innerHTML = `Mais`
+				document.querySelector("#mais1").innerHTML = ""
+			}
+		}
+	</script>
+	<span id="mais1"></span>
+	<p>
+		<input type="submit" value="Enviar">
+	</p>
+  </form>
+ </article>
+</main>
+
+
+
+<footer>
+<h6 id="footer">Veranopólis</h6>
+<h6 id="footer">Rio Grande do Sul, Brasil.</h6>
+        
+		<a target="_blank" href="myllenaaaanichele@gmail.com"> Enviar e-mail para a desenvolvedora</a>
+	 
+</footer>
+
+</body>
+</html>
+
+
+
+
+ 
+ 
